@@ -11,6 +11,7 @@ app.set('view engine', 'ejs')
 
 app.get('/', function (req, res) {
   res.render('index', {weather: null, error: null});
+  console.log('index page are showing')
 })
 
 app.post('/', function (req, res) {
@@ -35,3 +36,5 @@ app.post('/', function (req, res) {
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
+
+console.log('Server running....')
